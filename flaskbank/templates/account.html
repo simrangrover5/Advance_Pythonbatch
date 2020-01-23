@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            label{
+                font-size: 20px;
+                color: white;
+            }
+        </style>
+    </head>
+    <h1 style="color: red;">{{error}}</h1>
+    <body style="background-image: url('/static/a2.jpg');">
+        <center><form method ='POST' action="/afteropen/">
+            <label >Name</label><br>
+            <br>
+            <input type='text' name='name'><br>
+            
+            <label >DOB</label><br>
+            <br>
+            <input type="date" name='dob'><br>
+            <br>
+            <label>Adhaar card Number</label><br>
+            <br>
+            <input type='varchar' name='adhar'><br>
+            <br>
+            <label>Mobile Number</label><br>
+            <br>
+            <input type='varchar' name='phone'><br>
+            <br>
+            <label >Username</label><br>
+            <br>
+            <input type='text' name='uname'><br>
+            <label>Password</label><br>
+            <br>
+            <input type='password' name='password'><br>
+            <br>
+            <input type='submit' value='Submit'><br>
+        </form></center> 
+    </body>
+</html>

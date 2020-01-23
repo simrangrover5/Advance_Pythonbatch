@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>This is my form</title>
+        <style>
+            p{
+                color: black;
+                font-size: 30px;
+                font-style: italic;
+            }
+            body{
+                background: linear-gradient(to right,red,rgb(48, 15, 3));
+            }
+            #sub{
+                height: 40px;
+                width: 70px;
+                background: black;
+                color:white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET" action="one.html">
+            <p>Enter your email : </p>
+            <input type="email" name="email"><br>
+            <p>Enter your password : </p>
+            <input type="password" name="pswd"><br>
+            <p>Gender</p>
+            <input type="radio" name="gender" value="male">MALE<input type="radio" name="gender" value="female">FEMALE<br>
+            <input type="submit" value="SUBMIT" id="sub">
+
+        </form>
+    </body>
+</html>

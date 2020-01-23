@@ -1,0 +1,33 @@
+{% block head %}
+<html>
+    <head>
+        <style>
+            li{
+                display:inline-block;
+                padding:20px;
+            }
+            a{
+                color:white;
+                text-decoration: none;
+                font-style: italic;
+                font-size: 30px;
+            }
+            li:hover{
+                transform : scale(1.1);
+            }
+            
+        </style>
+
+    </head>
+    <body style='background:black'>
+        <div>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/login/">LOGIN</a></li>
+                <li><a href="/signup/">SIGNUP</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
+{% endblock %}

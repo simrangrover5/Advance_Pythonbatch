@@ -1,0 +1,22 @@
+<html>
+    <style>
+        label{
+            color:whitesmoke;
+            font-size: 40px;
+        }
+    </style>
+
+    <body>
+        {% include "nav.html" %}
+        {% block head %}
+        {% endblock %}
+        <h1 style="color:red">{{ error }}</h1>
+        <form method="POST" action="/afterlogin/">
+            <label>Enter your email</label><br>
+            <input type="email" name="email"><br>
+            <label>Enter your password</label><br>
+            <input type="password" name="pswd"><br>
+            <input type="submit" value="LOGIN">
+        </form>
+    </body>
+</html>

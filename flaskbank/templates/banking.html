@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            #s{
+                font-size: 20px;
+                border:solid 1px;
+                padding: 1%;
+                float:left;
+                
+                margin-left: 23%;
+                margin-top: 5%;
+                transform: none;
+                height:5%;
+                width:20%;
+                background-color: pink;
+            }
+            #k{
+                font-size: 20px;
+                border:solid 1px;
+                padding: 1%;
+                float:right;
+                margin-right: 23%;
+                margin-top: 5%;
+                transform: none;
+                height:5%;
+                width:20%;
+                background-color: pink;
+            }
+            #l{
+                font-size: 20px;
+                border:solid 1px;
+                padding: 1%;
+                float:left;
+                margin-left: 23%;
+                margin-top: 5%;
+                transform: none;
+                height:5%;
+                width:20%;
+                background-color: pink;
+            }
+            #m{
+                font-size: 20px;
+                border:solid 1px;
+                padding: 1%;
+                float:right;
+                margin-right: 23%;
+                margin-top: 5%;
+                transform: none;
+                height:5%;
+                width:20%;
+                background-color: pink;
+            }
+            #n{
+                font-size: 20px;
+                border:solid 1px;
+                padding: 1%;
+                margin-left: 40%;
+                margin-top: 5%;
+                margin-right: 30%;
+                transform: none;
+                height:5%;
+                width:20%;
+                background-color:pink;
+            }
+            #le{
+                margin-left:90%;
+                height:1%;
+                width:5%;
+                color: white;
+                font-size: 20px;
+                transform: none;
+            }
+    
+        </style>
+    </head>
+    <body style="background-image: url('/static/a2.jpg');">
+
+        <li id='le'>{{error}}</li>
+        
+        {%include 'hom1.html'%}
+        {%block head1%}
+        {%endblock%}
+   
+        <li id ='s'><center><a href='/withdrawl/'>Withdrawl</a></center></li>
+        <li id ='k'><center><a href='/deposit/'>Deposite</a></center></li>
+        <li id ='l'><center><a href='/enquiry/'>Balance Enq</a></center></li>
+        <li id ='m'><center><a href='/account/'>Open Account</a></center></li>
+        <li id ='n'><center><a href='/detail/'>Update Details</a></center></li>
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            label{
+                font-size: 20px;
+                color: white;
+            }
+
+        </style>
+        
+    <body style="background-image: url('/static/a2.jpg');">
+        {%include 'home.html'%}
+        {%block head%}
+        {%endblock%}
+        <center><h1 style="color: red;">{{error}}</center><h1>
+        <form method='POST' action='/afterbanking/' style="text-align: center;">
+            <label>Email</label><br>
+            <br>
+            <input type='email' name='email'><br>
+            <br>
+            <label>Password</label><br>
+            <br>
+            <input type='password' name='pswd'><br>
+            <br>
+            <input type='submit' value='Login'>
+        </form>
+    </body>
+</html>

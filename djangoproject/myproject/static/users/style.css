@@ -1,0 +1,14 @@
+p{
+    color: darkgoldenrod;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+#sub{
+    margin-left: 35%;
+    font-size: 30px;
+    background: black;
+    color: cornflowerblue;
+    height: 10%;
+    width: 25%;
+}

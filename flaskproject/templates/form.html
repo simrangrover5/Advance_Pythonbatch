@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>This is my form</title>
+        <style>
+            p{
+                color:whitesmoke;
+                font-size: 30px;
+                font-style: italic;
+            }
+            body{
+                background: linear-gradient(to right,red,rgb(48, 15, 3));
+            }
+            #sub{
+                height: 40px;
+                width: 70px;
+                background: black;
+                color:white;
+
+            }
+        </style>
+    </head>
+    <body>
+        {% include "nav.html" %}
+        {% block head %}
+        {% endblock %}
+        <h1 style="color: red;">{{ error }}</h1>
+        <form method="POST" action="/aftersign/">
+            <p>Enter your full name : </p>
+            <input type="text" name="name"><br>
+            <p>Enter your email : </p>
+            <input type="email" name="email"><br>
+            <p>Enter your password : </p>
+            <input type="password" name="pswd"><br>
+            <input type="submit" value="SIGNUP" id="sub">
+
+        </form>
+    </body>
+</html>

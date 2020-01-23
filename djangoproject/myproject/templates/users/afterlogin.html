@@ -1,0 +1,40 @@
+{% block head %}
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <style>
+            li{
+                display: inline;
+                padding: 40px;
+            }
+            a{
+                text-decoration: none;
+                color:antiquewhite;
+                font-size: 30px;
+            }
+            a:hover{
+                font-size: 40px;
+            }
+            p{
+                text-transform: uppercase;
+                font-style: italic;
+                font-size: 100px;
+                color: black;
+                padding-top: 10%;
+                padding-left: 30%;
+            }
+
+        </style>
+
+    </head>
+    <body style="background: linear-gradient(rgb(90, 35, 8),rgb(206, 198, 198));">
+        <ul>
+            
+            <li><a href="/user/logout/">LOGOUT</li>
+            <li><a href="/blog/addblog/">ADDBLOG</a></li>
+            <li><a href="#">MyBLOGS</a></li>
+        </ul>
+        <p><b>Blog Webapp</b></p>
+    </body>
+</html>
+{% endblock %}

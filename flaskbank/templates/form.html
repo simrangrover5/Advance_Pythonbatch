@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            label{
+                font-size: 20px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="background-image: url('/static/a2.jpg');">
+        {%include 'home.html'%}
+        {%block head%}
+        {%endblock%}
+        <h1 style="color: red;">{{error}}</h1>
+        <center><form method ='POST' action="/aftersign/">
+            <label >Name</label><br>
+            <br>
+            <input type='text' name='name'><br>
+            <br>
+            <label >Email</label><br>
+            <br>
+            <input type='email' name='email'><br>
+            <br>
+            <label>Password</label><br>
+            <br>
+            <input type='password' name='pswd'><br>
+            <br>
+            <label >Confirm Password</label><br>
+            <br>
+            <input type='password' name ='cpswd'><br>
+            <br>
+            <input type='submit' value='Signup'><br>
+        </form></center>
+    </body>
+</html>

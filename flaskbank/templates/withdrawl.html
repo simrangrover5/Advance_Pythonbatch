@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            label{
+                font-size: 20px;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <h1 style="color: red;">{{error}}</h1>
+    <body style="background-image: url('/static/a2.jpg');">
+        <center><form method="POST" action="/afterwithdraw/">
+            <label>Username</label><br>
+            <br>
+            <input type='text' name='username'><br>
+            <br>
+            <label>Password</label><br>
+            <br>
+            <input type='password' name='pswd'><br>
+            <br>
+            <label>Amount</label><br>
+            <br>
+            <input type="number" name='amount'><br>
+            <br>
+            <input type='submit' value='submit'>
+        </form></center>
+    </body>
+</html>

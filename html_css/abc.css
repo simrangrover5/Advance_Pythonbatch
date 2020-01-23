@@ -1,0 +1,11 @@
+li{
+    display: inline;
+    padding: 20px;
+}
+div{
+    float: right;
+}
+a{
+    color:chocolate;
+    text-decoration: none;
+}

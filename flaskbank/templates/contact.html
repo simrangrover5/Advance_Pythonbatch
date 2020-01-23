@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            label{
+                font-size: 20px;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body style="background-image: url('/static/a2.jpg');">
+        {%include 'home.html'%}
+        {%block head%}
+        {%endblock%}
+        <h1 style="color: red;"><center>{{error}}</center></h1>
+        <form method='POST' action='/aftercontact/' style="text-align:center;">
+            <label>Name</label><br>
+            <br>
+            <input type="text" name='name'><br>
+            <br>
+            <label>Email</label><br>
+            <br>
+            <input type="email" name='email'><br>
+            <br>
+            <label>Message</label><br>
+            <br>
+            <input type="text" name='msg'><br>
+            <br>
+            <input type='submit' value='Submit'>
+        </form>
+    </body>
+</html>

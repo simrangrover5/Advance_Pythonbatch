@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <p id="p" style="color:chocolate;font-size:30px;"></p>
+        <input type="text" id="input">
+        <button id="btn" onclick="submit()">SUBMIT</button>
+        <script>
+            var a = 10;
+            var b = 20;
+            /*document.write(a+b)*/
+            function submit(){
+                name = document.getElementById("input").value;
+                document.getElementById("p").innerHTML = "Hello user" + " " + name;
+            }
+        </script>
+    </body>
+</html>
