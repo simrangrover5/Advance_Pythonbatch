@@ -9,7 +9,7 @@
         {% block head %}
         {% endblock %}
         <h1 style="color: red;">{{ error }}</h1>
-        <form method="POST" action="/user/afterlogin/">
+        <form method="POST" action="/blog/blogadd/">
             {% csrf_token %}
             {{ f.as_p }}
         <!--as_table,as_ul-->
