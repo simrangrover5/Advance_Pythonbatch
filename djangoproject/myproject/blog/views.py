@@ -4,6 +4,9 @@ from django.views import View
 from .models import Addblog
 from users.models import AddUser
 from django.http import HttpResponse
+from rest_framework.views import APIView
+from .serializers import Addblogserializer
+from rest_framework.response import Response
 # Create your views here.
 
 def addblog(request):
@@ -37,3 +40,13 @@ class Blogs(View):
 def myblogs(request):
     data = Addblog.objects.filter(author=AddUser.objects.get(email=request.session.get('email')))
     return HttpResponse(data)
+
+
+class showapi(APIView):
+    def get(self,request):
+        all = Addblog.objects.all()
+        blogs = Addblogserializer(all,many=True)
+        return Response(blogs.data)
+
+    def post(self,request):
+        pass
